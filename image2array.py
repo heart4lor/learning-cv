@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 
-img = cv2.imread('len_std.jpg')
+img = cv2.imread('in/len_std.jpg')
 print(type(img))
 print(img.shape)
 print(img.dtype)

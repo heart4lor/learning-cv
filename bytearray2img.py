@@ -11,8 +11,8 @@ flatNumpyArray = numpy.array(randomByteArray)
 
 # reshape and convert array to gray image
 grayImage = flatNumpyArray.reshape(300, 400)
-cv2.imwrite('random_gray.png', grayImage)
+cv2.imwrite('out/random_gray.png', grayImage)
 
 # reshape and convert array to bgr image
 bgrImage = flatNumpyArray.reshape(100, 400, 3)
-cv2.imwrite('random_bgr.png', bgrImage)
+cv2.imwrite('out/random_bgr.png', bgrImage)
