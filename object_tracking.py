@@ -26,9 +26,9 @@ while(1):
     lower_red = np.array([0, 0, 0])
     upper_red = np.array([10, 255, 130])
 
-    mask = cv2.inRange(hsv, lower_red, upper_red)
+    mask = cv2.inRange(hsv, lower_red, upper_red) # generate the mask
 
-    res = cv2.bitwise_and(frame, frame, mask = mask)
+    res = cv2.bitwise_and(frame, frame, mask = mask) # bitwise frame and mask
 
     cv2.imshow('frame', frame)
     cv2.imshow('mask', mask)
