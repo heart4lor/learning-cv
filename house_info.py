@@ -74,9 +74,9 @@ def calcValue():
                 drawText((pos, 8), value)
                 prev = now
 
-house_raw = cv2.imread('in/house_test.png')
-house_gray = cv2.imread('in/house_test.png', 0)
-_, house_bin = cv2.threshold(house_gray, 127, 255, cv2.THRESH_BINARY)
+house_raw = cv2.imread('in/test.jpg')
+house_gray = cv2.imread('in/test.jpg', 0)
+_, house_bin = cv2.threshold(house_gray, 200, 255, cv2.THRESH_BINARY)
 
 top, buttom = cutEdge(house_bin)
 house_bin = house_bin[top:buttom]
